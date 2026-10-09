@@ -1,0 +1,70 @@
+<!DOCTYPE HTML>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <title>Document</title>
+    </head>
+    <body>
+        <section id="inscricao">
+            <h2>Ficha de inscrição no Workshop</h2>
+            <p>Preencha os dados</p>
+            <form action="#" method="post">
+                <fieldset>
+                    <legend><b>1 - Informações Pessoais</legend><br>
+                    <label For="Campo-nome">Nome completo:</label><br>
+                    <input type ="Text" name="Nome_completo" id="campo_nome" placeholder="Informe seu nome" required size ="40"><br>
+            
+                    <label For="Campo-email" >Email Pessoal:</label><br>
+                    <input type ="text" name="email_pessoal" id="campo_email" placeholder="Informe seu email" required size ="40"><br>
+                
+                    <label For="Campo-telefone" >Informe seu telefone:</label><br>
+                    <input type ="tel" name="telefone" id="campo_telefone" placeholder="Informe seu telefone" required size ="40"><br>
+               
+                    <label For="Campo-data_nascimento" >Data de nascimento:</label><br>
+                    <input type ="date" name="data_de_nascimento" id="campo_data_nascimento" ><br>
+                </fieldset>
+                <fieldset>
+                    <legend><b>2 - Preferências do Workshop</legend><br>
+                        <label for ="Campo-curso" > Selecione o workshop desejado :</label><br>
+                        <select name="selecao_cursos" id="campo-curso" required>
+                            <option value="">Selecione uma opção</option>
+                            <option value="front">Front-end</option>
+                            <option value="back">Back-end</option>
+                            <option value="mobile">Mobile</option>
+
+                        </select><br>
+
+
+                        <p><br>Selecione o turno do Workshop:</p>
+                        <input type="radio" name="turno_escolhido" id="campo-turno-manha" value="manha" checked>
+                        <label for ="campo-turno-manha">Turno da Manhã</label>
+
+                         <input type="radio" name="turno_escolhido" id="campo-turno-tarde" value="tarde" >
+                        <label for ="campo-turno-tarde">Turno da Tarde</label>
+
+                         <input type="radio" name="turno_escolhido" id="campo-turno-noite" value="noite" >
+                        <label for ="campo-turno-noite">Turno da Noite</label><b>
+
+
+                        <p><b>Tòpicos de Interesse:</b></p>
+                        <input type ="checkbox" name="topicos[]" id="topico_html" value="html">
+                        <label for="topico_html">HTML</label>
+
+                         <input type ="checkbox" name="topicos[]" id="topico_css" value="css">
+                        <label for="topico_css">CSS</label>
+
+                         <input type ="checkbox" name="topicos[]" id="topico_js" value="js">
+                        <label for="topico_js">JS</label><b>
+
+                            <br>
+                        <label for="campo_observacao">Observações ou duvidas</label><br>
+                        <textarea name="observacoes_adicionais" id="campo-observacao" rows="4" cols="50" placeholder="Informe aqui os dados adicionais pertinentes ao evento..."></textarea>
+                </fieldset>
+                <button type="submit"><b>Confirmar meu cadastro</b></button>
+                <button type="reset"><b>Limpar formulario</b></button>
+            </form>
+            
+
+        </section>
+    </body>
+</html>
