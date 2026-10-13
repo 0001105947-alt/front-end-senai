@@ -1,70 +1,155 @@
-<!DOCTYPE HTML>
-<html lang="pt-br">
+    <!DOCTYPE html>
+    <html lang="pt-BR">
     <head>
-        <meta charset="UTF-8">
-        <title>Document</title>
-    </head>
+    <meta charset="UTF-8">
+    <title>Studio Power Fitness - Agende sua Aula Experimental</title>
+</head>
     <body>
-        <section id="inscricao">
-            <h2>Ficha de inscrição no Workshop</h2>
-            <p>Preencha os dados</p>
-            <form action="#" method="post">
-                <fieldset>
-                    <legend><b>1 - Informações Pessoais</legend><br>
-                    <label For="Campo-nome">Nome completo:</label><br>
-                    <input type ="Text" name="Nome_completo" id="campo_nome" placeholder="Informe seu nome" required size ="40"><br>
-            
-                    <label For="Campo-email" >Email Pessoal:</label><br>
-                    <input type ="text" name="email_pessoal" id="campo_email" placeholder="Informe seu email" required size ="40"><br>
-                
-                    <label For="Campo-telefone" >Informe seu telefone:</label><br>
-                    <input type ="tel" name="telefone" id="campo_telefone" placeholder="Informe seu telefone" required size ="40"><br>
-               
-                    <label For="Campo-data_nascimento" >Data de nascimento:</label><br>
-                    <input type ="date" name="data_de_nascimento" id="campo_data_nascimento" ><br>
-                </fieldset>
-                <fieldset>
-                    <legend><b>2 - Preferências do Workshop</legend><br>
-                        <label for ="Campo-curso" > Selecione o workshop desejado :</label><br>
-                        <select name="selecao_cursos" id="campo-curso" required>
-                            <option value="">Selecione uma opção</option>
-                            <option value="front">Front-end</option>
-                            <option value="back">Back-end</option>
-                            <option value="mobile">Mobile</option>
 
-                        </select><br>
+        <header>
+            <h1>Studio Power Fitness</h1>
+            <nav>
+                <ul>
+                    <li><a href="#sobre">Sobre o Studio</a></li>
+                    <li><a href="#servicos">Modalidades</a></li>
+                    <li><a href="#contato">Aula Experimental</a></li>
+                </ul>
+            </nav>
+        </header>
+
+    <main>
+
+    <section id="sobre">
+        <h2>Sobre o Studio Power Fitness</h2>
+        <p>Somos um studio focado em treino personalizado, saúde preventiva e acompanhamento individualizado para ajudar você a alcançar seus objetivos de forma segura e eficiente.</p>
+        <center><img src="imagens/academia.jpg"  height ="400px", width="1000px"="Pessoas praticando treino funcional com acompanhamento de instrutor em uma academia moderna e iluminada.">
+    </section>
 
 
-                        <p><br>Selecione o turno do Workshop:</p>
-                        <input type="radio" name="turno_escolhido" id="campo-turno-manha" value="manha" checked>
-                        <label for ="campo-turno-manha">Turno da Manhã</label>
+    <section id="servicos">
+        <h2>Nossas Modalidades</h2>
+        <p>Oferecemos Treino Funcional, Musculação Dirigida, Pilates Solo e HIIT. Nossas turmas têm número reduzido de alunos para garantir atendimento de excelência.</p>
+    </section>
 
-                         <input type="radio" name="turno_escolhido" id="campo-turno-tarde" value="tarde" >
-                        <label for ="campo-turno-tarde">Turno da Tarde</label>
+    
+    <section id="contato">
+        <h2>Agende sua Aula Experimental Gratuita</h2>
 
-                         <input type="radio" name="turno_escolhido" id="campo-turno-noite" value="noite" >
-                        <label for ="campo-turno-noite">Turno da Noite</label><b>
+        <form action="#" method="POST">
 
 
-                        <p><b>Tòpicos de Interesse:</b></p>
-                        <input type ="checkbox" name="topicos[]" id="topico_html" value="html">
-                        <label for="topico_html">HTML</label>
+        <fieldset>
+        <legend>Dados do Aluno</legend>
 
-                         <input type ="checkbox" name="topicos[]" id="topico_css" value="css">
-                        <label for="topico_css">CSS</label>
+        <p>
+        <label for="nome">Nome Completo:</label><br>
+        <input type="text" id="nome" name="nome" placeholder="Ex: Maria Silva" required>
+    </p>
 
-                         <input type ="checkbox" name="topicos[]" id="topico_js" value="js">
-                        <label for="topico_js">JS</label><b>
+    <p>
+        <label for="email">E-mail de Contato:</label><br>
+        <input type="email" id="email" name="email" placeholder="exemplo@email.com" required>
+    </p>
 
-                            <br>
-                        <label for="campo_observacao">Observações ou duvidas</label><br>
-                        <textarea name="observacoes_adicionais" id="campo-observacao" rows="4" cols="50" placeholder="Informe aqui os dados adicionais pertinentes ao evento..."></textarea>
-                </fieldset>
-                <button type="submit"><b>Confirmar meu cadastro</b></button>
-                <button type="reset"><b>Limpar formulario</b></button>
-            </form>
-            
+    <p>
+        <label for="telefone">Telefone / WhatsApp:</label><br>
+        <input type="tel" id="telefone" name="telefone" placeholder="(31) 99999-8888" required>
+    </p>
 
-        </section>
+    <p>
+        <label for="data_aula">Data Pretendida para a Aula:</label><br>
+        <input type="date" id="data_aula" name="data_aula" required>
+    </p>
+    </fieldset>
+
+    <fieldset>
+    <legend>Preferências de Treino</legend>
+
+    <p>
+            <label for="modalidade">Escolha a Modalidade:</label><br>
+            <select id="modalidade" name="modalidade" required>
+            <option value="">-- Selecione uma opção --</option>
+            <option value="funcional">Treino Funcional</option>
+            <option value="pilates">Pilates Solo</option>
+            <option value="hiit">HIIT Cardio</option>
+            <option value="musculacao">Musculação Personalizada</option>
+            </select>
+    </p>
+
+    <p>
+        <label>Turno de Preferência:</label><br>
+        <input type="radio" id="turno_manha" name="turno" value="manha" required>
+        <label for="turno_manha">Manhã</label>
+
+        <input type="radio" id="turno_tarde" name="turno" value="tarde">
+        <label for="turno_tarde">Tarde</label>
+
+        <input type="radio" id="turno_noite" name="turno" value="noite">
+        <label for="turno_noite">Noite</label>
+    </p>
+
+
+    <p>
+        <label for="objetivo">Objetivo Principal (opcional):</label><br>
+        <input type="text" id="objetivo" name="objetivo" list="lista-objetivos" placeholder="Digite ou selecione da lista">
+        <datalist id="lista-objetivos">
+        <option value="Emagrecimento e Definição">
+        <option value="Ganho de Massa Muscular">
+        <option value="Condicionamento Físico">
+        <option value="Reabilitação e Postura">
+        </datalist>
+    </p>
+
+    <p>
+        <label for="termo_saude">
+            <input type="checkbox" id="termo_saude" name="termo_saude" required>
+            Declaro que estou apto à prática de atividades físicas.
+        </label>
+    </p>
+
+
+    <p>
+    <label for="nivel_fitness">Nível atual de atividade física (1 - Sedentário a 10 - Atleta):</label><br>
+        <input type="range" id="nivel_fitness" name="nivel_fitness" min="1" max="10" value="5">
+    </p>
+    </fieldset>
+
+    <fieldset>
+    <legend>Informações Adicionais</legend>
+
+    <p>
+    <label for="observacoes">Possui alguma lesão ou limitação física que devamos saber?</label><br>
+    <textarea id="observacoes" name="observacoes" rows="4" placeholder="Descreva aqui se possui dores no joelho, coluna, etc."></textarea>
+    </p>
+    </fieldset>
+
+
+    <p>
+    <button type="submit">Agendar Aula Experimental</button>
+    <button type="reset">Limpar Formulário</button>
+    </p>
+
+    </form>
+    </section>
+
+
+        <aside>
+        <h3>Informações da Academia</h3>
+            <p><strong>Horário de Funcionamento:</strong> Segunda a Sexta, das 06h às 22h | Sábados, das 08h às 13h.</p>
+            <p><strong>Endereço:</strong> Av. Principal, 450 - Centro / Juiz de Fora - MG</p>
+            <h4>Perguntas Frequentes</h4>
+            <ul>
+            <li><strong>O que devo levar na primeira aula?</strong> Traga garrafa de água, toalha de treino e venha com roupa confortável.</li>
+            <li><strong>A aula experimental é paga?</strong> Não, a primeira sessão é 100% gratuita.</li>
+            </ul>
+        </aside>
+    </main>
+
+
+    <footer>
+    <p> 2026 Studio Power Fitness. Todos os direitos reservados. Desenvolvido para a Atividade Prática SENAI MG.</p>
+    </footer>
+
     </body>
-</html>
+    </html>
+
